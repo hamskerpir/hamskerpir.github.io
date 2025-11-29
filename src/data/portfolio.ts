@@ -215,9 +215,9 @@ export const CONFIG: Config = {
     title: 'Senior Back-end Engineer',
     headline: 'Building scalable and user-centric web applications that drive business growth and innovation.',
     socials: [
-        {url: 'https://github.com', icon: 'devicon-github-plain'},
-        {url: 'https://linkedin.com', icon: 'devicon-linkedin-plain'},
-        {url: 'https://instagram.com', icon: 'devicon-facebook-plain'},
+        {url: 'https://github.com/hamskerpir', icon: 'devicon-github-plain'},
+        {url: 'https://www.linkedin.com/in/mark-barzali/', icon: 'devicon-linkedin-plain'},
+        {url: 'https://instagram.com/custos.epica', icon: 'devicon-facebook-plain'},
     ],
     contact: {
         email: 're.markofdark@gmail.com'
