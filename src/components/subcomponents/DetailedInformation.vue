@@ -24,7 +24,7 @@ let hook = async () => {
     renderedContent.value = "Hmm... nothing there. Someone stole it!";
     return;
   }
-  const filePath = `src/assets/${props.skill.description}`;
+  const filePath = `${props.skill.description}`;
 
   if (filePath) {
     const response = await fetch(`/${filePath}`);
