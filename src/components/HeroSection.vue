@@ -23,6 +23,7 @@ const config = CONFIG
         rel="noopener noreferrer"
         :aria-label="social.icon"
         class="bg-transparent border border-border hover:bg-secondary hover:border-primary/50 transition-colors duration-300 p-2 rounded-md"
+        @click="$posthog.capture('social_link_clicked', { social_icon: social.icon })"
       >
         <i :class="`text-2xl ${social.icon}`"></i>
       </a>

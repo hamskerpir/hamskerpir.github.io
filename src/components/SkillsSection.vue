@@ -40,8 +40,9 @@ const clearSelection = () => {
                 :key="skill.name"
                 class="flex items-center gap-3 rounded-lg border border-border p-3 transition-all hover:border-primary/50 hover:bg-secondary duration-200"
                 @click="() => {
-                selected = skill;
-              }"
+                  selected = skill;
+                  $posthog.capture('skill_clicked', { skill_name: skill.name });
+                }"
             >
               <i :class="iconClass(skill)" class="h-5 w-5 text-primary min-w-3"></i>
               <span class="font-medium">{{ skill.name }}</span>

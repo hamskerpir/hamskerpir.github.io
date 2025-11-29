@@ -21,6 +21,7 @@ const recentPosts = computed(() => config.blogPosts.slice(0, 3));
         target="_blank"
         rel="noopener noreferrer"
         class="group block"
+        @click="$posthog.capture('blog_post_clicked', { blog_title: post.title })"
       >
         <div class="h-full bg-card/50 border border-border/50 transition-all duration-300 group-hover:border-primary/80 group-hover:shadow-lg group-hover:shadow-primary/10 flex flex-col rounded-lg shadow-md">
           <div class="p-6">
